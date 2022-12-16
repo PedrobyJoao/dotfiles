@@ -5,7 +5,8 @@ local o = vim.o
 -- vim.api.nvim_command('filetype plugin indent on')
 
 o.termguicolors = true
--- o.background = 'red'
+vim.cmd [[ colorscheme peachpuff]]
+-- o.background = 'dark'
 
 -- Do not save when switching buffers
 -- o.hidden = true
@@ -19,8 +20,7 @@ o.scrolloff = 8
 
 -- Better editor UI
 o.number = true
--- o.numberwidth = 5
-o.signcolumn = 'yes:2'
+o.numberwidth = 4
 o.cursorline = true
 
 -- Better editing experience
@@ -28,7 +28,7 @@ o.expandtab = true
 -- o.smarttab = true
 o.cindent = true
 -- o.autoindent = true
-o.wrap = true
+o.wrap = false
 o.textwidth = 300
 o.tabstop = 4
 o.shiftwidth = 0
@@ -41,12 +41,12 @@ o.listchars = 'trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂'
 -- Makes neovim and host OS clipboard play nicely with each other
 o.clipboard = 'unnamedplus'
 
--- Case insensitive searching UNLESS /C or capital in search
+    -- Case insensitive searching UNLESS /C or capital in search
 o.ignorecase = true
 o.smartcase = true
 
 -- Undo and backup options
-o.backup = false
+o.backup = true
 o.writebackup = false
 o.undofile = true
 o.swapfile = false

@@ -16,6 +16,9 @@ map('i', 'JK', '<ESC>')
 -- Delete faster
 map('n', '<leader>d', 'dd')
 
+-- Nohl command to CRTL + N
+map('n', '<C-N>', ':nohl<CR>')
+
 -- Quickly save the current buffer or all buffers
 map('n', '<leader>w', '<CMD>update<CR>')
 map('n', '<leader>W', '<CMD>wall<CR>')
